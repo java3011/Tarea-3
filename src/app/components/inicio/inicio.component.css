@@ -1,0 +1,38 @@
+#casi {
+  margin-left: 30px;
+}
+
+#casi li {
+  list-style: none;
+  padding-left: 40px;
+}
+
+#casi li #caja {
+  background-color: #eeecec;
+}
+
+#casi li #caja button {
+  margin-left: 75px;
+  background-color: green;
+  color: #eeecec;
+}
+
+#casis {
+  margin-left: 30px;
+}
+
+#casis li {
+  list-style: none;
+  padding-left: 40px;
+}
+
+#casis li #cajas {
+  background-color: #eeecec;
+}
+
+#casis li #cajas button {
+  margin-left: 45px;
+  background-color: green;
+  color: #eeecec;
+}
+/*# sourceMappingURL=inicio.component.css.map */

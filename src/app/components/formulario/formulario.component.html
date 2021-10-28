@@ -1,0 +1,59 @@
+<div *ngIf="!activarMen">
+    <form [formGroup]="formulario" (ngSubmit)="ValidarDatos()" novalidate>
+        <div class="container">
+            <div class="row">
+                <h2 class="mt-2"><span>Formulario de contacto</span></h2>
+                <ul class="mt-4">
+                    <li>
+                        <label for="nombreC" class="col-sm-2 col-form-label">Nombre Completo:</label>
+                        <input id="nombreC" formControlName="nombreC" type="text" maxlength="120" placeholder="Nombre Completo">
+                        <div *ngIf="formulario.controls['nombreC'].invalid && (formulario.controls['nombreC'].dirty || formulario.controls['nombreC'].touched)" class="alert alert-danger">
+                            Nombre completo requerido
+                        </div>
+                    </li>
+                    <li class="mt-3">
+                        <label for="celular" class="col-sm-1 col-form-label">Telefono:</label>
+                        <input id="celular" formControlName="celular" type="text" maxlength="120" placeholder="Número contacto">
+                        <div *ngIf="formulario.controls['celular'].invalid && (formulario.controls['celular'].dirty || formulario.controls['celular'].touched)" class="alert alert-danger">
+                            Campo númerico requerido
+                        </div>
+                    </li>
+                    <li class="mt-3">
+                        <label for="usuario" class="col-sm-2 col-form-label">Correo Electrónico:</label>
+                        <input id="usuario" formControlName="usuario" type="email" maxlength="120" placeholder="Correo electrónico">
+                        <div *ngIf="formulario.controls['usuario'].invalid && (formulario.controls['usuario'].dirty || formulario.controls['usuario'].touched)" class="alert alert-danger">
+                            Correo electrónico requerido
+                        </div>
+                    </li>
+                    <li class="mt-3">
+                        <label for="dir" class="col-sm-1 col-form-label">Dirigido a:</label>
+                        <select class="form-label " id="dir" formControlName="dir">
+                        <option selected>Opciones...</option>
+                        <option value="1">Contenidos</option>
+                        <option value="2">Publicidad</option>
+                        <option value="3">Sugerencia</option> 
+                        <option value="4">Suscripción Digital</option>
+                    </select>
+                        <div *ngIf="formulario.controls['dir'].invalid && (formulario.controls['dir'].dirty || formulario.controls['dir'].touched)" class="alert alert-danger">
+                            Campo requerido
+                        </div>
+                    </li>
+                    <li class="mt-2">
+                        <div><label for="men" class="col-sm-2 col-form-label">Mensaje:</label></div>
+                        <textarea id="men" formControlName="men" rows="3" class="col-sm-4 col-form-label" maxlength="500" placeholder="Escriba su mensaje..."></textarea>
+                        <div *ngIf="formulario.controls['men'].invalid && (formulario.controls['men'].dirty || formulario.controls['men'].touched)" class="alert alert-danger">
+                            Campo requerido
+                        </div>
+                    </li>
+                    <li class=" mt-2">
+                        <button type="submit" class="mt-2" [disabled]="!formulario.valid">Enviar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div *ngIf="activarMen" class="mt-4">
+    ¡¡¡¡Gracias, tus datos fueron recibidos!!!! Por favor vuelva al inicio.
+</div>

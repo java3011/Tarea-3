@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,GAAG,CAAC;EACA,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "detalle2-not.component.scss"
+    ],
+    "names": [],
+    "file": "detalle2-not.component.css"
+}

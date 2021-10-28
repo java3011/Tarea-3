@@ -1,0 +1,9 @@
+<div class="container mt-4">
+    <h2>{{Noticia.titulo}}</h2>
+    <h4>Categoria: <span [ngClass]="{azul:Categoria.color=='blue', rojo:Categoria.color=='red', verde:Categoria.color=='green', rojoob:Categoria.color=='redob', violeta:Categoria.color=='purple', azulob:Categoria.color=='blueob'}">{{Categoria.titulo}}</span></h4>
+    <img src="../../../assets/{{Noticia.imag}}" alt="{{Noticia.imag}}">
+    <p class="mt-2">Autor: {{Noticia.autor}} - Fecha: {{Noticia.fecha}}</p>
+    <div class="mt-3">
+        <p>{{Noticia.contenido2}}</p>
+    </div>
+</div>

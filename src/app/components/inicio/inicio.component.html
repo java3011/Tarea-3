@@ -1,0 +1,36 @@
+<section>
+    <div class="container">
+        <div class="row mt-5" id="global">
+            <div class="col-12" id="casi">
+                <ul>
+                    <li *ngFor="let noticia of ListaNoticias" style="float: left;">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../../../assets/{{noticia.imag}}" class="card-img-top" alt="{{noticia.imag}}">
+                        </div>
+                        <div class="card-body" id="caja" style="width: 18rem;">
+                            <h4>{{noticia.titulo}}</h4>
+                            <p>{{noticia.contenido}}</p>
+                            <button [routerLink]="['detalleNot',noticia.id]">Leer más</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12" id="casis">
+                <ul>
+                    <li *ngFor="let NotiNormal of ListaNot" style="float: left;">
+                        <div class="card" style="width: 13rem;">
+                            <img src="../../../assets/{{NotiNormal.imag}}" class="card-img-top" alt="{{NotiNormal.imag}}">
+                        </div>
+                        <div class="card-body" id="cajas" style="width: 13rem;">
+                            <h4>{{NotiNormal.titulo}}</h4>
+                            <p>{{NotiNormal.contenido}}</p>
+                            <button [routerLink]="['detalleNot2',NotiNormal.id]">Leer más</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,OAAc;CACxB;;AAED,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,MAAM;CAChB;;AAED,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,OAAc;CACxB;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,GAAG;CACb;;AAED,AAAA,GAAG,CAAC;EACA,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "detalle-not.component.scss"
+    ],
+    "names": [],
+    "file": "detalle-not.component.css"
+}
